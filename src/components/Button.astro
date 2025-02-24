@@ -1,0 +1,32 @@
+---
+const { size, outline } = Astro.props;
+
+let padding;
+switch (size) {
+  case "sm":
+    padding = "px-4 py-2";
+    break;
+  case "md":
+    padding = "px-6 py-3";
+    break;
+  case "lg":
+    padding = "px-8 py-4";
+    break;
+  default:
+    padding = "px-6 py-3";
+}
+
+const defaultStyling = `bg-primary`
+const outlineStyling = `text-primary`
+---
+
+
+<button
+  type="button"
+  class={`${outline ? outlineStyling : defaultStyling} ${padding} rounded-xl border-2 border-primary hover:cursor-pointer`}
+  style={!outline ? "box-shadow: inset 1px 5px 5px 0px #FFFFFF" : ""}
+>
+  <div class="font-medium">
+    <slot />
+  </div>
+</button>
