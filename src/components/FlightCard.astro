@@ -2,7 +2,7 @@
   const {imgSrc, price, href, title, description} = Astro.props;
 ---
 
-<a href={href} class="flex flex-col border rounded-xl overflow-hidden hover:shadow-xl transition-shadow">
+<a href={href} class="flex flex-col rounded-xl overflow-hidden hover:-translate-y-2 shadow-md hover:shadow-xl transition-all bg-white">
   <img src={imgSrc} alt="Flight" class="w-full aspect-square rounded-xl bg-neutral-200" />
   <div class="flex flex-col p-5 space-y-2">
     <h2 class="text-xl font-semibold">{ title }</h2>

@@ -1,0 +1,100 @@
+---
+import FlightSelector from "../components/FlightSelector";
+import Gallery from "../components/Gallery.astro";
+import Map from "../components/Map";
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="px-6 md:px-10 py-4 space-y-10">
+    <Nav dark />
+    <main class="px-0 md:px-10">
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <Gallery />
+        <div class="flex flex-col gap-10">
+          <h1 class="font-display text-4xl font-semibold">
+            TANDEM PARAGLIDING ON THE PLOSE
+          </h1>
+          <p>
+            Welcome to the Plose! A beautiful paragliding area that is conveniently
+            located above Brixen in the center of South Tyrol and is easily
+            accessible by car and public transport.
+            <br />
+            Here we offer the following tandem flights:
+          </p>
+          <FlightSelector client:load />
+          <section>
+            <h2 class="font-display text-slate-800 text-xl font-semibold mb-3">
+              Description
+            </h2>
+            <p class="text-slate-800">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              pellentesque nunc id nibh porta, quis mollis ipsum varius. Etiam
+              facilisis dictum pretium.
+              <br />
+              <br />
+              Proin a egestas lacus. Donec vehicula eleifend neque, a laoreet tortor
+              consectetur ut. Vivamus velit ipsum, tristique vitae consequat vitae, interdum
+              a ex. Morbi et eros vehicula, varius orci sit amet, venenatis mauris. Phasellus
+              vitae justo ac nulla viverra ultricies.
+              <br />
+              Pellentesque dapibus viverra ex et dignissim. Sed tristique interdum dolor,
+              sed tempor enim viverra nec. Sed quis convallis arcu, non ornare quam.
+              Cras nec efficitur tortor, sit amet viverra mi. Vestibulum in vehicula
+              risus. Maecenas nec felis tempus, tempor risus ut, egestas est. Duis dapibus
+              enim at enim aliquam blandit eget in sapien. Donec metus leo, cursus ut
+              ante vitae, dignissim sagittis ex. Integer ornare vehicula rhoncus. Morbi
+              non elementum nulla.
+              <br />
+              Sed ut nisi varius, commodo sem et, tempus mauris. Vestibulum et magna
+              ac orci vulputate facilisis a euismod risus.
+            </p>
+          </section>
+
+          <Map client:load />
+
+          <section>
+            <h2 class="font-display text-slate-800 text-xl font-semibold mb-3">
+              The day of your flight
+            </h2>
+            <p class="text-slate-800">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+              <br />
+              <br />
+              Lorem Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five centuries, but
+              also the leap into electronic typesetting, remaining essentially unchanged.
+              <br />
+              It was popularised in the 1960s with the release of Letraset sheets containing
+              Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </section>
+    
+          <section>
+            <h2 class="font-display text-slate-800 text-xl font-semibold">
+              What should I bring?
+            </h2>
+            <p class="text-slate-800">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Has been the industry's standard dummy text:
+            </p>
+    
+            <br />
+    
+            <ul class="text-slate-800 list-disc list-inside">
+              <li>Gloves</li>
+              <li>Winterjacket</li>
+              <li>Good shoes</li>
+              <li>Sunglasses (optional)</li>
+              <li>Cash</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>

@@ -33,9 +33,25 @@ import ReviewCard from "./ReviewCard.astro";
   }
 </style>
 
-<section class="flex flex-col items-center">
+<section class="flex flex-col items-center space-y-5">
+  <div>
+    <div class="flex flex-col md:flex-row items-center gap-2 text-slate-800 font-display text-4xl font-bold">
+      <h2
+        class="bg-primary pt-3 pb-1 px-5 leading-none"
+      >
+        200+
+      </h2>
+      <h2 class="mt-2">
+        SATISFIED PASSENGERS
+      </h2>
+    </div>
+    <p class="text-center text-slate-800">
+      Don't just take our word for it. Here is what they say about us:
+    </p>
+  </div>
+
   <div class="w-full overflow-hidden relative space-y-5">
-    <div style="background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%);" class="absolute top-0 left-0 w-full h-full z-10" />
+    <div style="background-image: linear-gradient(90deg, rgba(245,245,245,1) 5%, rgba(245,245,245,0) 20%, rgba(245,245,245,0) 80%, rgba(245,245,245,1) 95%);" class="absolute top-0 left-0 w-full h-full z-10" />
     <!-- Left-scrolling row -->
     <div class="scroll-wrapper">
         <div class="flex gap-5">
