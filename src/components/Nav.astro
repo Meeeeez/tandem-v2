@@ -7,7 +7,7 @@ const { dark: isDark } = Astro.props;
 ---
 
 <div
-  class="top-0 left-0 z-10 right-0 flex items-center justify-between px-0 md:px-10 py-4"
+  class="top-0 left-0 z-10 right-0 flex items-center justify-between px-0 py-4"
 >
   <!-- logo -->
   <a href="/" class="flex">
@@ -19,7 +19,7 @@ const { dark: isDark } = Astro.props;
   </a>
 
   <!-- nav links -->
-  <div class="hidden md:flex  gap-10">
+  <div class="hidden md:flex gap-10">
     <a
       href="#about"
       class=`${isDark ? 'text-slate-800' : 'text-gray-100'} text-sm font-light hover:underline`
@@ -45,13 +45,25 @@ const { dark: isDark } = Astro.props;
   <!-- social links -->
   <div class="hidden md:flex gap-8">
     <a href="#" aria-label="tiktok" target="_blank" rel="noopener">
-      <img class=`${isDark && 'invert-75'}` src="/icon/tiktok.svg" alt="tiktok" />
+      <img
+        class=`${isDark && 'invert-75'}`
+        src="/icon/tiktok.svg"
+        alt="tiktok"
+      />
     </a>
     <a href="#" aria-label="instagram" target="_blank" rel="noopener">
-      <img class=`${isDark && 'invert-75'}` src="/icon/instagram.svg" alt="tiktok" />
+      <img
+        class=`${isDark && 'invert-75'}`
+        src="/icon/instagram.svg"
+        alt="tiktok"
+      />
     </a>
     <a href="#" aria-label="facebook" target="_blank" rel="noopener">
-      <img class=`${isDark && 'invert-75'}` src="/icon/facebook.svg" alt="tiktok" />
+      <img
+        class=`${isDark && 'invert-75'}`
+        src="/icon/facebook.svg"
+        alt="tiktok"
+      />
     </a>
   </div>
 </div>
