@@ -1,0 +1,26 @@
+---
+import PilotCard from './PilotCard.astro';
+---
+
+<section class="px-5 md:px-10 space-y-5">
+  <h2 class="text-4xl font-display font-semibold">
+    MEET YOUR <span class="text-primary">PILOTS</span>
+  </h2>
+  <p>
+    Embrace the outdoors with curated adventures, exploring forests, mountains,
+    <br />
+    and experiencing nature's tranquility.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <PilotCard
+      title="Samu G"
+      imgSrc="/img/samu.jpg"
+      description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    />
+    <PilotCard
+      title="Molle"
+      imgSrc="/img/molle.jpg"
+      description="Hot no koan Tandemschein ober isch motiviert. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    />
+  </div>
+</section>
