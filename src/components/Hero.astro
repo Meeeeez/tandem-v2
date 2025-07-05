@@ -5,10 +5,10 @@ import { ArrowDown } from 'lucide-astro';
 ---
 
 <section
-  class="h-screen md:max-h-[750px] relative bg-[url(/img/hero.jpg)] bg-cover px-5 md:px-10 py-4 shadow-[inset_0_40px_70px_0_rgba(0,0,0,0.5)] bg-[position:0%_80%] 2xl:rounded-xl 2xl:mx-10"
+  class="h-svh md:max-h-[750px] relative bg-[url(/img/hero.jpg)] bg-cover px-5 md:px-10 py-4 shadow-[inset_0_40px_70px_0_rgba(0,0,0,0.5)] bg-[position:0%_80%] 2xl:rounded-xl 2xl:mx-10"
 >
   <!-- background -->
-  <div class="absolute inset-0 flex items-center justify-center h-full z-0">
+  <div class="hidden md:flex absolute inset-0 items-center justify-center h-full z-0">
     <div class="flex justify-around h-full w-full">
       <div class="bg-white opacity-5 w-0.5 h-full"></div>
       <div class="bg-white opacity-5 w-0.5 h-full"></div>
@@ -21,25 +21,25 @@ import { ArrowDown } from 'lucide-astro';
     <Nav />
     <div class="flex flex-col space-y-6">
       <h1
-        class="text-3xl md:text-6xl text-white font-display font-semibold leading-tight md:leading-17"
+        class="text-3xl md:text-6xl text-white font-display font-bold md:font-semibold leading-tight md:leading-17"
       >
         <span class="text-primary">UNFORGETTABLE</span>
         FLIGHTS
         <br />
         OVER THE DOLOMITES
       </h1>
-      <div class="flex justify-between items-center mb-2">
+      <div class="flex md:flex-row flex-col justify-between md:items-center gap-4">
         <p class="text-neutral-100 font-light">
           With our expert pilots,
           <br />
           you’re in safe hands for a truly amazing experience.
         </p>
 
-        <div class="hidden md:flex items-center space-x-4">
-          <Button size="lg" outline>
+        <div class="flex items-center space-x-4">
+          <Button size="md" outline>
             <ArrowDown />
           </Button>
-          <Button size="lg"> Book Now </Button>
+          <Button size="md"> Book Now </Button>
         </div>
       </div>
     </div>

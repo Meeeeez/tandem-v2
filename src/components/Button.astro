@@ -1,5 +1,5 @@
 ---
-const { size, outline } = Astro.props;
+const { size, outline, className } = Astro.props;
 
 let padding;
 switch (size) {
@@ -23,7 +23,7 @@ const outlineStyling = `text-primary`
 
 <button
   type="button"
-  class={`${outline ? outlineStyling : defaultStyling} ${padding} rounded-xl border-2 border-primary hover:cursor-pointer`}
+  class={`${outline ? outlineStyling : defaultStyling} ${padding} rounded-xl border-2 border-primary hover:cursor-pointer ${className}`}
   style={!outline ? "box-shadow: inset 1px 5px 5px 0px #FFFFFF" : ""}
 >
   <div class="font-medium">
